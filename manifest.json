@@ -1,0 +1,17 @@
+{
+    "name": "Whatsapp Privacy",
+    "version": "0.1.0",
+    "description": "Saving timestamps in YT videos",
+    "host_permissions": ["https://*.whatsapp.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://*.whatsapp.com/*"],
+        "js": ["script.js"]
+      }
+    ],
+    "action": {
+      "default_title": "My YT Bookmarks",
+      "default_popup": "index.html"
+    },
+    "manifest_version": 3
+}
